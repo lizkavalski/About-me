@@ -7,8 +7,8 @@ console.log('name',user);
 var place = prompt('Where are you from?' );
 console.log('place',place);   
 
-var answer = prompt("Alright " +user  + " the next question is a yes/no question. Please answer with Yes or No. Are you readey?" );
-console.log('Readey', answer)
+var answer = prompt("Alright " +user  + " the next question is a yes/no question. Please answer with Yes or No. Are you ready?" );
+console.log('Ready', answer)
 
     if (answer === "Y" || answer==="y" ||answer=== "Yes" ||answer=== "yes" ){
         alert ("Alright lets go " + user +".")
@@ -32,8 +32,9 @@ var dog = prompt("Another yes/no questions: Do you have a dog?")
 
 var numDog = prompt ('how many dogs do you have?')
     console.log('number of dogs', numDog)
-        if (answer === '2' || answer === 'two'|| answer=== "Two"){alert('I have two dogs too.')}
-        else {alert:'that too sad'}
+        if (answer === 2 || answer === 'two'|| answer=== "Two"){alert('I have two dogs too.')
+        } else{
+            alert('That too sad')}
 
 var wantDragon = prompt('Would you like a pet dragon?')
     console.log('dragon',wantDragon)
@@ -41,9 +42,9 @@ var wantDragon = prompt('Would you like a pet dragon?')
 var car= prompt('Do you drive?')
         console.log('drive', car)
     if (answer === "Y" || answer==="y" ||answer=== "Yes" ||answer=== "yes" ){
-        alert("I do to "+ user + " ." )}
-    else 
-        {alert:'that too sad'}
+        alert("I do too "+ user + " ." )}
+    else {
+        alert('that too sad')}
 
 var typeCar= prompt('What type of car?')
         console.log('Make of car', typeCar)
