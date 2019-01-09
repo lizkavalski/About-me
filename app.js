@@ -40,9 +40,10 @@ var wantDragon = prompt('Would you like a pet dragon?')
 
 var car= prompt('Do you drive?')
         console.log('drive', car)
-        
     if (answer === "Y" || answer==="y" ||answer=== "Yes" ||answer=== "yes" ){
-    } else{ 
         alert("I do to "+ user + " ." )}
+    else 
+        {alert:'that too sad'}
+
 var typeCar= prompt('What type of car?')
         console.log('Make of car', typeCar)
