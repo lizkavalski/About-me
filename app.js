@@ -5,7 +5,7 @@
 alert('Nice to meet you I am going to ask you a couple of questions');
 //question 1
 var user = prompt('What is my name?');
-  if (user === 'Liz' || user ==='Elizabeth'){
+  if (user === 'Liz'|| user ==='Elizabeth'){
       alert ('You are correct')
       score++
     }else{ 
@@ -18,6 +18,7 @@ for(i=0; i< 3; i++){
         if (place === 'Washington'){
             alert( 'You are Correct')
             score++
+            break
         } else { 
         alert ('Try again')}  
      } 
@@ -55,6 +56,7 @@ for(var i = 0; i<3; i++){
             if (numDog === 2){
                 alert('You are correct')
                 score++
+                break
             }
             if(numDog < 2){
                  alert('too low')
@@ -68,38 +70,47 @@ for(var i = 0; i<3; i++){
       
 //question 6 (fifth y/n)
 var wantDragon = prompt('Would I like a pet dragon?')
-        if (wantDragon === Yes){
+        if (wantDragon === 'Yes' || 'Y' ){
             alert('Yes I would like a dragon')
             score++
         }
-        else {alert ('of course I want a dragon')}
+        else {
+            alert ('of course I would want a dragon')
+        }
     console.log('dragon',wantDragon)
 // question 7 (sixth y/n)
 var car= prompt('Do I drive?')
         console.log('drive', car)
     if (car === "Y" || car==="y" ||car=== "Yes" ||car=== "yes" ){
-        alert("Yes I do "+ user + " ." )
+        alert("Yes I do ." )
         score++
     }
     else {
         alert('I do drive')}
 //question 8 (make into a loop)
-var typeCar= prompt('What type of car do I drive?')
+var typeCar= prompt('What type of car do I drive?');
+    for(var i = 0;i < 3; i++){  
         if(typeCar === 'Yellow Car'){
             alert('You are correct')
             score++
+            break
         }
-        else{alart('Of couse I want a dragon')}
+        else{
+            alart('nope')}
+        }
         console.log('Make of car', typeCar)
 // question 9 (arrary w/loop)
-var backGrund = [childcare, food, werehouse]
-for(var i= 0; y<backGrund.length; i++){
-    var vocation= prompt ('What was my previous job background?' )
-        if(vocation = backGrund){
-            alert('You are correct')
-            score++
-        }
-        else {prompt( 'nope')}
-    console.log(backGrund[i])
-}
+//var backGround = [childcare, food, werehouse]
+
+//var vocation= prompt ('What was my previous job background?' )
+//      for(var i= 0; i < backGround.length; i++){
+//        if(vocation === backGrund[i]){
+//            alert('You are correct')
+//            score++
+//            break
+//        }
+//        else {
+            //alert('Nope')}
+//    console.log(backGrund[i])
+//}
 var endOfQuiz = prompt('congreat you got '+ score + ' out of 9')

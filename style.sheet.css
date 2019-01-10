@@ -1,8 +1,6 @@
 header{
     background:rgb(82, 3, 156);
     color: black;
-    margin-left: 200px;
-    margin-right: 200px;
     font-family: fantasy;
     font-size: 50px;
     text-align: center;
@@ -14,10 +12,9 @@ body{
     background: green;
     color: aqua;
     font-size: 25px;
-    margin-left:100px;
-    margin-right:100px;
+    margin:10px;
     font-family: 'Courier New', Courier, monospace;
-    padding: 10px; 
+    padding: 50px; 
 }
 #funfact{
     padding:20px,10;
@@ -25,5 +22,9 @@ body{
 }
 ul{
     list-style: disc;
+    margin:50px;
+}
+ol{
+    list-style: decimal;
     margin:50px;
 }
