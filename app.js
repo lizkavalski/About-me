@@ -1,13 +1,19 @@
 'use strict';
  
  var score = 0;
+// question 0
+ function questionZero(){
+    var user = prompt ("What is you your name?")
+        console.log('User name', user)
+        alert('Nice to meet you ' + user + ' I am going to ask you a couple of questions');
+    }
+questionZero();
 
-alert('Nice to meet you I am going to ask you a couple of questions');
 //question 1
 function questionOne(){
-    var user = prompt('What is my name?').toUpperCase();
-    console.log('name', user);
-    if (user === 'LIZ'|| user ==='ELIZABETH'){
+    var myName = prompt('What is my name?').toUpperCase();
+    console.log('My name', myName);
+    if (myName === 'LIZ'|| myName ==='ELIZABETH'){
         alert ('You are correct');
         score++
     }else{ 
@@ -49,7 +55,7 @@ console.log('Ready', ready);
 questionThree();
 
 
-//question 3 (second y/n)
+//question 4 (second y/n)
 function questionFour(){
 var toDoCodeing = prompt(' Another yes/no question: I am excited to do coding?').toUpperCase();
         console.log('excited to do code', toDoCodeing)
@@ -63,21 +69,21 @@ var toDoCodeing = prompt(' Another yes/no question: I am excited to do coding?')
 }
 questionFour();
 
-//question 4 (thrid y/n)
+//question 5 (thrid y/n)
 function questionFive(){
 var dog = prompt("Another yes/no questions: Do I have a dog?").toUpperCase();
     console.log('Dog', dog)
         if (dog === "Y" ||dog === "Yes"){
-            alert('I have a dog ');
+            alert('I do have a dog ');
             score++;
          } else{ 
-            alert(' I do have a dogs and they make great snuggle buddies' );
+            alert(' I do have a dog and they make great snuggle buddies' );
         }
     }
     questionFive();
 
 
-//question 5(make into number loop)
+//question 6(make into number loop)
 function questionSix(){
 for(var i = 0; i<3; i++){
         var numDog = parseInt(prompt ('how many dogs do I have?'));
@@ -97,7 +103,7 @@ for(var i = 0; i<3; i++){
     }
 questionSix();
       
-//question 6 (fifth y/n)
+//question 7 (fifth y/n)
 function questionSeven(){
 var wantDragon = prompt('Would I like a pet dragon?').toUpperCase();
         if (wantDragon === 'YES' || 'Y' ){
@@ -110,7 +116,7 @@ var wantDragon = prompt('Would I like a pet dragon?').toUpperCase();
     }
 questionSeven();
 
-// question 7 (sixth y/n)
+// question 8 (sixth y/n)
 function questionEight(){
 var car= prompt('Do I drive?').toUpperCase();
     console.log('drive', car);
@@ -123,7 +129,7 @@ var car= prompt('Do I drive?').toUpperCase();
 }
 questionEight();
 
-//question 8 (make into a loop)
+//question 9 (make into a loop)
 function questionNine(){
 for(var i = 0;i < 3; i++){  
     var typeCar= prompt('What type of car do I drive?').toUpperCase();
@@ -139,7 +145,7 @@ for(var i = 0;i < 3; i++){
 }
 questionNine();
 
-//question 9 (arrary w/loop)
+//question 10 (arrary w/loop)
 function questionTen(){
 var backGround = ['childcare', 'food', 'werehouse'];
 
