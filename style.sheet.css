@@ -4,28 +4,33 @@ header{
     font-family:fantasy;
     font-size: 50px;
     text-align: center;
+    margin:20px; 
+    border-radius:50px;
 }
-img{
+#cat{
     height:100px;
     width:100px;
 }
 body{
-    background: yellow;
+    background: #F487F8;
+
 }
 .info{
-    background: green;
-    color: aqua;
+    background: #F2F95F;
+    color: rgb(162, 0, 255);
     text-align: justify;
     font-size: 25px;
     margin:20px;
     font-family: 'Courier New', Courier, monospace;
     padding: 50px; 
+    border-radius:50px;
 }
 #fact{
     margin-top:20px;
 }
 #movies{
     margin-top: 25px;
+   
 }
 ul{
     list-style: disc;
@@ -34,4 +39,5 @@ ul{
 ol{
     list-style: decimal;
     margin-left:60px;
+
 }
