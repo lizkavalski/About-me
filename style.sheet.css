@@ -7,9 +7,17 @@ header{
     margin:20px; 
     border-radius:50px;
 }
-#cat{
-    height:100px;
-    width:100px;
+#cats{
+    width: 100px;
+    height: 125px;
+    float: left;
+}
+#catsOne{
+    width: 100px;
+    height: 125px;
+    float: right;
+    -webkit-transform: scaleX(-1);
+        transform: scaleX(-1)
 }
 body{
     background: #F487F8;
@@ -28,8 +36,13 @@ body{
 #fact{
     margin-top:20px;
 }
+#dogs{
+    width: 250px;
+    height: 275px;
+    text-align: center;
+}
 #movies{
-    margin-top: 25px;
+    margin-top: 75px;
    
 }
 ul{
