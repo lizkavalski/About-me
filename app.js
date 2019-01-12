@@ -132,8 +132,8 @@ questionEight();
 //question 9 (make into a loop)
 function questionNine(){
 for(var i = 0;i < 3; i++){  
-    var typeCar= prompt('What type of car do I drive?').toUpperCase();
-        if(typeCar === 'YELLOW CAR'){
+    var typeCar= prompt('What color of car do I drive?').toUpperCase();
+        if(typeCar === 'YELLOW'){
             alert('You are correct')
             score++;
             break;
@@ -147,10 +147,10 @@ questionNine();
 
 //question 10 (arrary w/loop)
 function questionTen(){
-var backGround = ['childcare', 'food', 'werehouse'];
+var backGround = ['CHILDCARE', 'FOOD', 'WEREHOUSE'];
 
 for(var i= 0; i < backGround.length; i++){
-    var vocation= prompt ('What was my previous job background?' )
+    var vocation= prompt ('What was my previous job background?' ).toUpperCase();
        if(backGround.includes(vocation)){
            alert('You are correct');
            score++;
@@ -163,4 +163,4 @@ for(var i= 0; i < backGround.length; i++){
 }
 questionTen();
 
-alert('congreat you got '+ score + ' out of 9');
+alert('congreat you got '+ score + ' out of 10');
