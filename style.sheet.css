@@ -39,11 +39,17 @@ body{
 #dogs{
     width: 250px;
     height: 275px;
-    text-align: center;
+    margin-left: 100px;
 }
 #movies{
     margin-top: 75px;
    
+}
+#dragon{
+    width: 200px;
+    height: 150px;
+    margin-right:50px; 
+    float: right;
 }
 ul{
     list-style: disc;
@@ -54,3 +60,4 @@ ol{
     margin-left:60px;
 
 }
+
