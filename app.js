@@ -163,4 +163,4 @@ for(var i= 0; i < backGround.length; i++){
 }
 questionTen();
 
-alert('congreat '+ user+ ' got  score + ' out of 10');
+alert('congreat '+ user+ ' you got a of '+ score + ' out of 10');
