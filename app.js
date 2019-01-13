@@ -1,13 +1,11 @@
 'use strict';
  
- var score = 0;
+var score = 0;
 // question 0
- function questionZero(){
-    var user = prompt ("What is you your name?")
-        console.log('User name', user)
-        alert('Nice to meet you ' + user + ' I am going to ask you a couple of questions');
-    }
-questionZero();
+
+var user = prompt ("What is you your name?")
+    console.log('User name', user)
+    alert('Nice to meet you ' + user + ' I am going to ask you a couple of questions');
 
 //question 1
 function questionOne(){
@@ -163,4 +161,4 @@ for(var i= 0; i < backGround.length; i++){
 }
 questionTen();
 
-alert('congreat '+ user+ ' you got a of '+ score + ' out of 10');
+alert('congreat '+ user + ' you got a of '+ score + ' out of 10');
