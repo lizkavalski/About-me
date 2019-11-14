@@ -1,7 +1,7 @@
 'use strict';
  
 var score = 0;
-let anwser={...''};
+let anwser=[];
 // question 0
 
 // function questionsAnswer(answer){
@@ -20,15 +20,15 @@ function questionOne(){
     console.log('My name', myName);
     if (myName === 'LIZ'|| myName ==='ELIZABETH'){
         alert ('You are correct');
-        localStorage.anwser=JSON.stringify(anwser);
+        localStorage.anwser=JSON.stringify(myName);
         score++
         
     }else{ 
-        localStorage.anwser=JSON.stringify(anwser);
+        alert('not my name')
+        localStorage.anwser=JSON.stringify(myName);
     }
 }
 questionOne();
-
 
 
 //question 2 (loop)
@@ -38,11 +38,11 @@ for(var i=0; i< 3; i++){
         if (place === 'WASHINGTON'){
             alert( 'You are Correct');
             score++;
+            localStorage.anwser=JSON.stringify(place);
             break;
-            localStorage.items=JSON.stringify(anwser);
         } else { 
         alert ('Try again')
-        localStorage.items=JSON.stringify(anwser);
+        localStorage.anwser=JSON.stringify(place);
     }  
      } 
 console.log('place',place); 
@@ -58,10 +58,10 @@ console.log('Ready', ready);
     if (ready === 'YES' || ready ==='Y' ){
         alert ('Alright lets go .');
         score++;
-        localStorage.items=JSON.stringify(anwser);
+        localStorage.answer=JSON.stringify(ready);
     } else{ 
         alert('I think you can do it .' )
-        localStorage.items=JSON.stringify(anwser);
+        localStorage.answer=JSON.stringify(ready);
     }
 }
 questionThree();
@@ -74,11 +74,11 @@ var toDoCodeing = prompt(' Another yes/no question: I am excited to do coding?')
 
     if (toDoCodeing === "Y" ||toDoCodeing=== "Yes"){
         alert('I am excited');
-        score++
-        localStorage.items=JSON.stringify(anwser);;
+        score++;
+        localStorage.answer=JSON.stringify(toDoCodeing);
     } else{ 
-        alert("I am excited ." )
-        localStorage.items=JSON.stringify(anwser);;
+        alert("I am excited ." );
+        localStorage.answer=JSON.stringify(toDoCodeing);
     }
 }
 questionFour();
@@ -89,11 +89,11 @@ var dog = prompt("Another yes/no questions: Do I have a dog?").toUpperCase();
     console.log('Dog', dog)
         if (dog === "Y" ||dog === "Yes"){
             alert('I do have a dog ');
-            score++
-            localStorage.items=JSON.stringify(anwser);;
+            score++;
+            localStorage.answer=JSON.stringify(dog);
          } else{ 
             alert(' I do have a dog and they make great snuggle buddies' );
-            localStorage.items=JSON.stringify(anwser);
+            localStorage.answer=JSON.stringify(dog);
         }
     }
     questionFive();
@@ -106,16 +106,16 @@ for(var i = 0; i<3; i++){
             if (numDog === 2){
                 alert('You are correct');
                 score++;
-                localStorage.items=JSON.stringify(anwser);
+                localStorage.answer=JSON.stringify(numDog);
                 break;
             } else if (numDog < 2) {
-                localStorage.items=JSON.stringify(anwser);
+                localStorage.answer=JSON.stringify(numDog);
                  alert('too low');
             } else if (numDog > 2) {
-                localStorage.items=JSON.stringify(anwser); 
+                localStorage.answer=JSON.stringify(numDog);
                 alert('too high');
             } else {
-                localStorage.items=JSON.stringify(anwser);
+                localStorage.answer=JSON.stringify(numDog);
                 alert('a number plase');
             }
         }
