@@ -1,14 +1,19 @@
 'use strict';
  
 var score = 0;
-let anwser=[];
+var allAnswers = JSON.parse(localStorage.getItem('anwserArray')) || [];
+
+var newAnwers = 
+{
+ 'question': 
+};
+
+ allAnswers.push(newAnwers);
+
+ localStorage.setItem('anwserArray', JSON.stringify(newAnwers));
+
 // question 0
 
-// function questionsAnswer(answer){
-//     if(localStorage.getItem('anwser')){
-//         let questionsAns =JSON.parse(localStorage.getItem('anwser'))
-//     }
-// }
 
 var user = prompt ("What is you your name?")
     console.log('User name', user)
@@ -20,12 +25,12 @@ function questionOne(){
     console.log('My name', myName);
     if (myName === 'LIZ'|| myName ==='ELIZABETH'){
         alert ('You are correct');
-        localStorage.anwser=JSON.stringify(myName);
+        //localStorage.anwser=('anwserArray',JSON.stringify(myName));
         score++
         
     }else{ 
         alert('not my name')
-        localStorage.anwser=JSON.stringify(myName);
+        //localStorage.anwser=JSON.stringify(myName);
     }
 }
 questionOne();
@@ -38,11 +43,11 @@ for(var i=0; i< 3; i++){
         if (place === 'WASHINGTON'){
             alert( 'You are Correct');
             score++;
-            localStorage.anwser=JSON.stringify(place);
+            //localStorage.anwser=JSON.stringify(place);
             break;
         } else { 
         alert ('Try again')
-        localStorage.anwser=JSON.stringify(place);
+        //localStorage.anwser=JSON.stringify(place);
     }  
      } 
 console.log('place',place); 
@@ -191,4 +196,7 @@ for(var i= 0; i < backGround.length; i++){
 }
 questionTen();
 
+
 alert('congreat '+ user + ' you got a of '+ score + ' out of 10');
+
+localStorage.answers = JSON.stringify(allAnswers);
