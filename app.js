@@ -15,7 +15,7 @@ function questionOne(){
     console.log('My name', myName);
     if (myName === 'LIZ'|| myName ==='ELIZABETH'){
         alert ('You are correct');
-        localStorage.setItem(myName, JSON.stringify(answers))
+        localStorage.setItem(answers, JSON.stringify(myName))
         score++
         
     }else{ 
@@ -53,10 +53,10 @@ console.log('Ready', ready);
     if (ready === 'YES' || ready ==='Y' ){
         alert ('Alright lets go .');
         score++;
-        localStorage.answer=JSON.stringify(ready);
+        localStorage.setItem(ready, JSON.stringify(answers))
     } else{ 
         alert('I think you can do it .' )
-        localStorage.answer=JSON.stringify(ready);
+        localStorage.setItem(ready, JSON.stringify(answers));
     }
 }
 questionThree();
@@ -70,10 +70,10 @@ var toDoCodeing = prompt(' Another yes/no question: I am excited to do coding?')
     if (toDoCodeing === "Y" ||toDoCodeing=== "Yes"){
         alert('I am excited');
         score++;
-        localStorage.answer=JSON.stringify(toDoCodeing);
+        localStorage.setItem(toDoCodeing, JSON.stringify(answers))
     } else{ 
         alert("I am excited ." );
-        localStorage.answer=JSON.stringify(toDoCodeing);
+        localStorage.setItem(toDoCodeing, JSON.stringify(answers))
     }
 }
 questionFour();
@@ -85,10 +85,10 @@ var dog = prompt("Another yes/no questions: Do I have a dog?").toUpperCase();
         if (dog === "Y" ||dog === "Yes"){
             alert('I do have a dog ');
             score++;
-            localStorage.answer=JSON.stringify(dog);
+            localStorage.setItem(dog, JSON.stringify(answers))
          } else{ 
             alert(' I do have a dog and they make great snuggle buddies' );
-            localStorage.answer=JSON.stringify(dog);
+            localStorage.setItem(dog, JSON.stringify(answers))
         }
     }
     questionFive();
@@ -101,16 +101,16 @@ for(var i = 0; i<3; i++){
             if (numDog === 2){
                 alert('You are correct');
                 score++;
-                localStorage.answer=JSON.stringify(numDog);
+                localStorage.setItem(numDog, JSON.stringify(answers))
                 break;
             } else if (numDog < 2) {
-                localStorage.answer=JSON.stringify(numDog);
+                localStorage.setItem(numDog, JSON.stringify(answers))
                  alert('too low');
             } else if (numDog > 2) {
-                localStorage.answer=JSON.stringify(numDog);
+                localStorage.setItem(numDog, JSON.stringify(answers))
                 alert('too high');
             } else {
-                localStorage.answer=JSON.stringify(numDog);
+                localStorage.setItem(numDog, JSON.stringify(answers))
                 alert('a number plase');
             }
         }
@@ -124,9 +124,10 @@ var wantDragon = prompt('Would I like a pet dragon?').toUpperCase();
         if (wantDragon === 'YES' || 'Y' ){
             alert('Yes I would like a dragon');
             score++;
-            localStorage.items=JSON.stringify(anwser);
+            localStorage.setItem(wantDragon, JSON.stringify(answers))
+           
         } else {
-            localStorage.items=JSON.stringify(anwser);
+            localStorage.setItem(wantDragon, JSON.stringify(answers))
             alert ('of course I would want a dragon');
         }
     console.log('dragon',wantDragon);
@@ -140,9 +141,10 @@ var car= prompt('Do I drive?').toUpperCase();
     if (car === "Y" ||car=== "YES" ){
         alert("Yes I do ." );
         score++;
-        localStorage.items=JSON.stringify(anwser);
+        localStorage.setItem(car, JSON.stringify(answers))
+       
     } else {
-        localStorage.items=JSON.stringify(anwser);
+        localStorage.setItem(car, JSON.stringify(answers))
         alert('I do drive');
     }
 }
@@ -155,10 +157,10 @@ for(var i = 0;i < 3; i++){
         if(typeCar === 'YELLOW'){
             alert('You are correct')
             score++;
-            localStorage.items=JSON.stringify(anwser);
+            localStorage.setItem(typeCar, JSON.stringify(answers))
             break;
         }else{
-            localStorage.items=JSON.stringify(anwser);
+            localStorage.setItem(typeCar, JSON.stringify(answers))
             alert('nope');
         }
     }
@@ -175,11 +177,11 @@ for(var i= 0; i < backGround.length; i++){
        if(backGround.includes(vocation)){
            alert('You are correct');
            score++;
-           localStorage.items=JSON.stringify(anwser);
+           localStorage.setItem(vocation, JSON.stringify(answers))
            break;
        } else {
-        localStorage.items=JSON.stringify(anwser);
-            alert('Nope');
+        localStorage.setItem(vocation, JSON.stringify(answers))
+        alert('Nope');
         }
    console.log(backGround[i]);
     }
@@ -189,4 +191,4 @@ questionTen();
 
 alert('congreat '+ user + ' you got a of '+ score + ' out of 10');
 
-localStorage.answers = JSON.stringify(allAnswers);
+//localStorage.answers = JSON.stringify(allAnswers);
