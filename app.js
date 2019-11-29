@@ -1,7 +1,10 @@
 'use strict';
  
 var score = 0;
-var answers ={};
+var myanswers ={
+        answerone: 'myName',
+        anwsertwo: 'place',
+    };
 // question 0
 
 
@@ -15,12 +18,13 @@ function questionOne(){
     console.log('My name', myName);
     if (myName === 'LIZ'|| myName ==='ELIZABETH'){
         alert ('You are correct');
-        localStorage.setItem(answers, JSON.stringify(myName))
+        localStorage.setItem(myName , JSON.stringify(myanswers.answerone=myName))
         score++
         
     }else{ 
         alert('not my name')
-        localStorage.setItem(myName, JSON.stringify(answers))
+        localStorage.setItem(myName , JSON.stringify(myanswers.answerone=myName))
+     
     }
 }
 questionOne();
@@ -32,11 +36,12 @@ for(var i=0; i< 3; i++){
     var place = prompt('Where do you think I am from?' ).toUpperCase();
         if (place === 'WASHINGTON'){
             alert( 'You are Correct');
-            localStorage.setItem(place, JSON.stringify(answers))
+            localStorage.setItem(place , JSON.stringify(myanswers.anwsertwo=place))
             score++;
             break;
         } else { 
-            localStorage.setItem(place, JSON.stringify(answers))
+            localStorage.setItem(place , JSON.stringify(myanswers.anwsertwo=place))
+       
         alert ('Try again')
     }  
      } 
