@@ -2,8 +2,16 @@
  
 var score = 0;
 var myanswers ={
-        answerone: 'myName',
-        anwsertwo: 'place',
+        name: 'name',
+        place: 'place',
+        ready: 'ready',
+        toDo:'excited for codeing',
+        answerfive: 'dog',
+        anwsersix: 'numberOfDog',
+        answerseven: 'dragon',
+        anwsereight: 'drive',
+        anwsernine: 'type of car',
+        anwserten:'background',
     };
 // question 0
 
@@ -18,12 +26,12 @@ function questionOne(){
     console.log('My name', myName);
     if (myName === 'LIZ'|| myName ==='ELIZABETH'){
         alert ('You are correct');
-        localStorage.setItem(myName , JSON.stringify(myanswers.answerone=myName))
+        localStorage.setItem(myName , JSON.stringify(myanswers.name=myName))
         score++
         
     }else{ 
         alert('not my name')
-        localStorage.setItem(myName , JSON.stringify(myanswers.answerone=myName))
+        localStorage.setItem(myName , JSON.stringify(myanswers.name=myName))
      
     }
 }
@@ -36,11 +44,11 @@ for(var i=0; i< 3; i++){
     var place = prompt('Where do you think I am from?' ).toUpperCase();
         if (place === 'WASHINGTON'){
             alert( 'You are Correct');
-            localStorage.setItem(place , JSON.stringify(myanswers.anwsertwo=place))
+            localStorage.setItem(place , JSON.stringify(myanswers.place=place))
             score++;
             break;
         } else { 
-            localStorage.setItem(place , JSON.stringify(myanswers.anwsertwo=place))
+            localStorage.setItem(place , JSON.stringify(myanswers.place=place))
        
         alert ('Try again')
     }  
@@ -57,11 +65,12 @@ console.log('Ready', ready);
 
     if (ready === 'YES' || ready ==='Y' ){
         alert ('Alright lets go .');
+        localStorage.setItem(ready, JSON.stringify(myanswers.ready=ready))
         score++;
-        localStorage.setItem(ready, JSON.stringify(answers))
+       
     } else{ 
         alert('I think you can do it .' )
-        localStorage.setItem(ready, JSON.stringify(answers));
+        localStorage.setItem(ready, JSON.stringify(myanswers.ready=ready))
     }
 }
 questionThree();
@@ -74,11 +83,13 @@ var toDoCodeing = prompt(' Another yes/no question: I am excited to do coding?')
 
     if (toDoCodeing === "Y" ||toDoCodeing=== "Yes"){
         alert('I am excited');
+        localStorage.setItem(toDoCodeing , JSON.stringify(myanswers.toDo=toDoCodeing))
         score++;
-        localStorage.setItem(toDoCodeing, JSON.stringify(answers))
+      
     } else{ 
         alert("I am excited ." );
-        localStorage.setItem(toDoCodeing, JSON.stringify(answers))
+        localStorage.setItem(toDoCodeing , JSON.stringify(myanswers.toDo=toDoCodeing))
+       
     }
 }
 questionFour();
