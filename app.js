@@ -6,12 +6,12 @@ var myanswers ={
         place: 'place',
         ready: 'ready',
         toDo:'excited for codeing',
-        answerfive: 'dog',
-        anwsersix: 'numberOfDog',
-        answerseven: 'dragon',
-        anwsereight: 'drive',
-        anwsernine: 'type of car',
-        anwserten:'background',
+        haveDog: 'dog',
+        numberOfDog: 'numberOfDog',
+        dragon: 'dragon',
+        drive: 'drive',
+        typOf: 'type of car',
+        jods:'background',
     };
 // question 0
 
@@ -101,10 +101,12 @@ var dog = prompt("Another yes/no questions: Do I have a dog?").toUpperCase();
         if (dog === "Y" ||dog === "Yes"){
             alert('I do have a dog ');
             score++;
-            localStorage.setItem(dog, JSON.stringify(answers))
+        localStorage.setItem(dog , JSON.stringify(myanswers.haveDog=dog))
+          
          } else{ 
             alert(' I do have a dog and they make great snuggle buddies' );
-            localStorage.setItem(dog, JSON.stringify(answers))
+        localStorage.setItem(dog , JSON.stringify(myanswers.haveDog=dog))
+            
         }
     }
     questionFive();
@@ -117,16 +119,15 @@ for(var i = 0; i<3; i++){
             if (numDog === 2){
                 alert('You are correct');
                 score++;
-                localStorage.setItem(numDog, JSON.stringify(answers))
+                localStorage.setItem(numDog , JSON.stringify(myanswers.numberOfDog=numDog))
                 break;
             } else if (numDog < 2) {
-                localStorage.setItem(numDog, JSON.stringify(answers))
+                localStorage.setItem(numDog , JSON.stringify(myanswers.numberOfDog=numDog))
                  alert('too low');
             } else if (numDog > 2) {
-                localStorage.setItem(numDog, JSON.stringify(answers))
+                localStorage.setItem(numDog , JSON.stringify(myanswers.numberOfDog=numDog))
                 alert('too high');
             } else {
-                localStorage.setItem(numDog, JSON.stringify(answers))
                 alert('a number plase');
             }
         }
@@ -140,10 +141,12 @@ var wantDragon = prompt('Would I like a pet dragon?').toUpperCase();
         if (wantDragon === 'YES' || 'Y' ){
             alert('Yes I would like a dragon');
             score++;
-            localStorage.setItem(wantDragon, JSON.stringify(answers))
+            localStorage.setItem(wantDragon , JSON.stringify(myanswers.dragon=wantDragon
+                ))
+
            
         } else {
-            localStorage.setItem(wantDragon, JSON.stringify(answers))
+            localStorage.setItem(wantDragon , JSON.stringify(myanswers.dragon=wantDragon))
             alert ('of course I would want a dragon');
         }
     console.log('dragon',wantDragon);
@@ -156,12 +159,13 @@ var car= prompt('Do I drive?').toUpperCase();
     console.log('drive', car);
     if (car === "Y" ||car=== "YES" ){
         alert("Yes I do ." );
-        score++;
-        localStorage.setItem(car, JSON.stringify(answers))
+        localStorage.setItem(car , JSON.stringify(myanswers.drive=car))
+            score++;
+       
        
     } else {
-        localStorage.setItem(car, JSON.stringify(answers))
-        alert('I do drive');
+        localStorage.setItem(car , JSON.stringify(myanswers.drive=car))
+       alert('I do drive');
     }
 }
 questionEight();
@@ -172,11 +176,11 @@ for(var i = 0;i < 3; i++){
     var typeCar= prompt('What color of car do I drive?').toUpperCase();
         if(typeCar === 'YELLOW'){
             alert('You are correct')
+            localStorage.setItem(typeCar, JSON.stringify(myanswers.typeOf=typeCar))
             score++;
-            localStorage.setItem(typeCar, JSON.stringify(answers))
             break;
         }else{
-            localStorage.setItem(typeCar, JSON.stringify(answers))
+            localStorage.setItem(typeCar, JSON.stringify(myanswers.typeOf=typeCar))
             alert('nope');
         }
     }
@@ -192,11 +196,11 @@ for(var i= 0; i < backGround.length; i++){
     var vocation= prompt ('What was my previous job background?' ).toUpperCase();
        if(backGround.includes(vocation)){
            alert('You are correct');
+           localStorage.setItem(vocation, JSON.stringify(myanswers.jobs=vocation))
            score++;
-           localStorage.setItem(vocation, JSON.stringify(answers))
            break;
        } else {
-        localStorage.setItem(vocation, JSON.stringify(answers))
+        localStorage.setItem(vocation, JSON.stringify(myanswers.jobs=vocation))
         alert('Nope');
         }
    console.log(backGround[i]);
@@ -206,5 +210,5 @@ questionTen();
 
 
 alert('congreat '+ user + ' you got a of '+ score + ' out of 10');
-
-//localStorage.answers = JSON.stringify(allAnswers);
+document.getElementById("result").innerHTML = localStorage.getItem(myanswers);
+// localStorage.answers = JSON.stringify(allAnswers);
