@@ -1,34 +1,39 @@
-header{
-    background:rgb(82, 3, 156);
+body{
+    background: #F487F8;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+header {
+    background:#7811d8;
     color: black;
-    font-family:fantasy;
+    font-family: 'Satisfy', cursive;
     font-size: 50px;
-    text-align: center;
-    margin:20px; 
+    justify-content: center;
+    /* text-align: center;
+    margin:20px;  */
     border-radius:50px;
 }
 #cats{
     width: 100px;
     height: 125px;
-    float: left;
+    /* float: left; */
 }
 #catsOne{
     width: 100px;
     height: 125px;
-    float: right;
+    /* float: right; */
     -webkit-transform: scaleX(-1);
         transform: scaleX(-1)
-}
-body{
-    background: #F487F8;
-
 }
 .info{
     background: #F2F95F;
     color: rgb(162, 0, 255);
-    text-align: justify;
-    font-size: 25px;
-    margin:20px;
+    align-content: flex-end;
+    /* text-align: justify; */
+    /* font-size: 25px;
+    margin:20px; */
+   
     font-family: 'Courier New', Courier, monospace;
     padding: 50px; 
     border-radius:50px;
