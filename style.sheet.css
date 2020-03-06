@@ -61,18 +61,30 @@ nav ul{
 #funfact{
     background: rgb(249, 255, 134);
     color: rgb(162, 0, 255);
+    border: blue dashed .1em;
     padding: 2em;
     display: flex;
-    justify-content:space-around;
+    flex-flow: column warp;
+    align-items:flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
     border-radius: 2em;
     margin-bottom: .5em;
+}
+#funfact div{
+    border: red .1em dashed;
+    padding-right: 2em;
+ 
+}
+#funfact ul{
+    list-style: disc;
+    border: dashed blue .1em;
+
 }
 #dogs{
     width: 250px;
     height: 275px;
-}
-#funfact ul{
-    list-style: disc;
+    border: .1em green groove;
 }
 #movies{
     margin-top: 75px;
