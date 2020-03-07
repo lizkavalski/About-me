@@ -1,7 +1,10 @@
 body{
     background: #e2e2e2;
     flex-flow: row wrap;
-    
+}
+a{
+    color: rgb(236, 235, 235);
+    text-decoration: none;
 }
 header {
     background:#7811d8;
@@ -28,7 +31,6 @@ header #catsOne{
 nav ul{
     list-style: none;
     background: #9625ff;
-    color: rgb(236, 235, 235);
     font-family: 'Satisfy', cursive;
     font-size: 2em;
     display: flex;
@@ -58,7 +60,6 @@ h1{
 #heading-about{
     display: flex;
     flex-direction: row;
-    flex-basis: 20em;
     justify-content: center;
     align-items: center;
 }
@@ -76,17 +77,16 @@ h1{
     align-content: flex-end;
 }
 #test{
-    height: 3em;
-    width: 3em;
+    height: 1.5em;
+    width: 1.5em;
     border-radius: 5em;
-    flex-shrink: 1em;
 }
 #chick{
     height: 5em;
     width: 5em;
     border-radius: 5em;
     vertical-align: top;
-    border: lawngreen .5em dashed;
+    border: lime .5em dashed;
 }
 #funfact{
     background: rgb(249, 255, 134);
@@ -98,7 +98,7 @@ h1{
     align-items:flex-start;
     justify-content: flex-start;
     align-content: flex-start;
-    margin-bottom: .5em;
+    margin-bottom: 2em;
     border-radius: .5em;
 }
 #funfact div{
@@ -116,14 +116,23 @@ h1{
  
 }
 #movies{
-    margin-top: 75px;
+    background: rgb(249, 255, 134);
+    color: rgb(162, 0, 255);
+    box-shadow: .4em .4em #E0D7E0;
+    padding: 1.5em;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items:flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin-bottom: .5em;
+    border-radius: .5em;
    
 }
 #dragon{
-    width: 200px;
-    height: 150px;
-    margin-right:50px; 
-    float: right;
+    width:1em;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
 ol{
