@@ -1,2 +1,3 @@
-# Day-2-Lab-201
-## Jan 10th Driver: Vanessa Wei;  Navigator: Elizabeth Kavalski
+# About Me
+
+A simply little web application that tell about me using HTLM, CSS, and JavaScript.
