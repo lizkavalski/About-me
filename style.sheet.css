@@ -1,5 +1,5 @@
 body{
-    background: #fffefe;
+    background: #e2e2e2;
     flex-flow: row wrap;
     
 }
@@ -10,10 +10,7 @@ header {
     font-size: 3.5em;
     display: flex;
     justify-content: center;
-    border-radius:50px;
-    padding: .2em .1em .2em .1em ;
-    margin-bottom: .3em;
-    margin: .3em;
+
 }
 h2{
     padding:.9em .3em .8em .4em;
@@ -30,50 +27,74 @@ header #catsOne{
 }
 nav ul{
     list-style: none;
-    background: #FC33FF;
+    background: #9625ff;
     color: rgb(236, 235, 235);
     font-family: 'Satisfy', cursive;
     font-size: 2em;
     display: flex;
     justify-content: space-evenly;
-    border-radius:50px;
-    padding: .2em .1em .2em .1em ;
-    margin-bottom: .3em;
-    margin: .3em;
+    padding: .2em .1em .2em .1em;
 }
 .info{
+    background-color: ivory;
     align-content: flex-end;
     font-size: 1.5em;
     font-family: 'Source Sans Pro', sans-serif;
     line-height: 1.5em;
     padding: 1.5em; 
-    border-radius:50px;
     margin: 0em 3em 0em 3em;
 }
 h1{
     background:#7811d8;
     color: rgb(236, 235, 235);
-    font-family: 'Satisfy', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.5em;
+    margin-left:.5em;
+    margin-bottom: .3em;
+    padding: .5em;
+    flex-grow: 10;
+    
+}
+#heading-about{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    flex-basis: 20em;
+    justify-content: center;
+    align-items: center;
 }
 #about{
     background: rgb(249, 255, 134);
     color: rgb(162, 0, 255);
-    padding: 2em;
-    border-radius: 2em;
-    margin-bottom: .5em;
-
+    padding: 1.5em;
+    border-radius: .5em;
+    box-shadow: .4em .4em #E0D7E0;
+    margin-bottom: 3em;
+    display: flex;
+    flex-flow: row wrap;
+    align-items:flex-end;
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+#test{
+    height: 3em;
+    width: 3em;
+    border-radius: 5em;
+    flex-shrink: 1em;
+}
+#chick{
+    height: 5em;
+    width: 5em;
+    border-radius: 5em;
+    vertical-align: top;
+    border: lawngreen .5em dashed;
 }
 #funfact{
     background: rgb(249, 255, 134);
     color: rgb(162, 0, 255);
     box-shadow: .4em .4em #E0D7E0;
-    padding: 2em;
+    padding: 1.5em;
     display: flex;
-    flex-flow: column warp;
+    flex-flow: row nowrap;
     align-items:flex-start;
     justify-content: flex-start;
     align-content: flex-start;
@@ -91,6 +112,7 @@ h1{
 #dogs{
     width: 250px;
     height: 275px;
+    box-shadow: .4em .4em rgb(214, 221, 85);
  
 }
 #movies{
