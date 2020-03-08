@@ -6,8 +6,18 @@ a{
     color: rgb(236, 235, 235);
     text-decoration: none;
 }
+a:hover{
+    background-color: rgb(236, 158, 255);
+    color: #000;
+    padding: .2em 1em;
+    border-radius: 5em;
+}
+a:active{
+    background-color: mintcream;
+}
 header {
     background:#7811d8;
+    background-image: linear-gradient(to right,#49008d, #7811d8,#49008d);
     color: rgb(236, 235, 235);
     font-family: 'Satisfy', cursive;
     font-size: 3.5em;
@@ -62,6 +72,7 @@ h1{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    
 }
 #about{
     background: rgb(249, 255, 134);
@@ -79,11 +90,13 @@ h1{
 #test{
     height: 1.5em;
     width: 1.5em;
+    margin-right: 1em;
     border-radius: 5em;
+    vertical-align: middle;
 }
 #chick{
-    height: 5em;
-    width: 5em;
+    height: 5.5em;
+    width: 5.5em;
     border-radius: 5em;
     vertical-align: top;
     border: lime .5em dashed;
@@ -133,7 +146,13 @@ h1{
     width:1em;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
+    animation: myfirst 5s 2;
+    animation-direction: alternate;
 }
+  @keyframes myfirst {
+    0%   {left: 0px; top: 0px;}
+    100%  {left: 200px; top: 0px;}
+  }
 
 ol{
     list-style: decimal;
