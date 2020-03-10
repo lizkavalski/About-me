@@ -156,7 +156,7 @@ h1{
   }
 
 ol{
-    list-style: decimal;
+    list-style:upper-roman;
     margin-left:60px;
 
 }
