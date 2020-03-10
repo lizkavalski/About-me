@@ -7,13 +7,14 @@ a{
     text-decoration: none;
 }
 a:hover{
-    background-color: rgb(236, 158, 255);
+    /* background-color: rgb(236, 158, 255); */
+    background-image: radial-gradient( rgb(236,158,255), rgb(250, 240, 249));
     color: #000;
     padding: .2em 1em;
     border-radius: 5em;
 }
 a:active{
-    background-color: mintcream;
+    background-image: radial-gradient( mintcream,rgb(143, 245, 194) )
 }
 header {
     background:#7811d8;
@@ -155,7 +156,7 @@ h1{
   }
 
 ol{
-    list-style: decimal;
+    list-style:upper-roman;
     margin-left:60px;
 
 }
