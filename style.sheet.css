@@ -164,5 +164,10 @@ h1{
     background-size: contain;
     background-repeat: no-repeat;
     margin-left: 35px;
+    margin-right:.5em ;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+
+
 
 }
