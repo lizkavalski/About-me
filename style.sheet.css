@@ -155,7 +155,7 @@ h1{
     100%  {left: 200px; top: 0px;}
   }
 
-  ol li:before {
+ol li:before {
     content: '';
     display: inline-block;
     height: 25px;
