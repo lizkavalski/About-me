@@ -155,9 +155,13 @@ h1{
     100%  {left: 200px; top: 0px;}
   }
 
-ol{
-    list-style:upper-roman;
-    margin-left:60px;
-
+ol li:before {
+    content: '';
+    display: inline-block;
+    height: 25px;
+    width: 35px;
+    background-image: url('photos/baby-dragon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 35px;
 }
-
