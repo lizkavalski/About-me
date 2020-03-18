@@ -152,14 +152,7 @@ h1{
 #dragon{
     width:1em;
     -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    animation: myfirst 5s 2;
-    animation-direction: alternate;
-}
-  @keyframes myfirst {
-    0%   {left: 0px; top: 0px;}
-    100%  {left: 200px; top: 0px;}
-  }
+    transform: scaleX(-1);}
 
 ol li:before {
     content: '';
@@ -173,7 +166,31 @@ ol li:before {
     margin-right:.5em ;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
+}
+.deck{
+    background-color: ivory;
+    align-content: flex-end;
+    font-size: 1.5em;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5em;
+    padding: 1.5em; 
+    margin: 0em 3em 0em 3em;
+}
+.card{
+    border: burlywood groove .25em;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items:flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
 
-
-
+}
+h4{
+    color: black;
+    border: black .05em solid;
+    background-image:linear-gradient(to right, rgb(142, 187, 255), rgb(0, 87, 250), rgb(142, 187, 255));
+    width: 8em;
+}
+#logo{
+    width: 8em;
 }
